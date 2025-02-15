@@ -22,8 +22,11 @@ def rem():
     go = input("If You Want Shop More Items (Y/N)")
     if go.lower() =="y":
         Shop()
-    else:
+    elif go.lower() =="n":
         total()
+    else:
+        print("Invalid Option ! ")
+        rem()
 def Shop():
 
     print("==========  Wellcome To Dtao Official Shopping Mall ==========")
@@ -45,5 +48,8 @@ def Shop():
         Product.append("Banana(1kg)")
         Price.append(40)
         rem()
+    else:
+        print("Invalid Option ! ")
+        Shop()
 Shop()
 
